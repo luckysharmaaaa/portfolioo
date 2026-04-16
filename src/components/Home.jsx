@@ -1,112 +1,69 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaXTwitter } from "react-icons/fa6";
-import profileImg from "../assets/profileImg.jpg";
-import { Typewriter } from "react-simple-typewriter";
+import luckyimage from "../assets/luckyimage.png";
 
 export default function Home({ id }) {
   return (
     <section
       id={id}
-      className="bg-[#FAFAFA] scroll-mt-16 text-gray-800 min-h-[90vh] flex items-center py-8 md:py-10"
+      className="bg-[#0a0a0a] scroll-mt-20 text-white min-h-[90vh] flex items-center py-12 md:py-20"
     >
-      <div className="max-w-[1170px] mx-auto px-5 sm:px-4 flex flex-col md:flex-row items-center justify-between gap-11 md:gap-16">
-        {/* Left Side - Text */}
+      <div className="max-w-[1170px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16 w-full">
+        
+        {/* Left Side - Text Content */}
         <div
-          className="flex flex-col gap-4"
+          className="flex flex-col gap-6 flex-1 text-center md:text-left"
           data-aos="fade-right"
-          data-aos-once="true"
         >
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-            Hi, I'm{" "}
-            <span className="green-text">
-              <Typewriter
-                words={["Tejas Birla"]}
-                loop={true}
-                cursor
-                cursorStyle="|"
-                typeSpeed={80}
-                deleteSpeed={40}
-                delaySpeed={1500}
-              />
-            </span>
-          </h2>
-          <h3 className="text-xl md:text-2xl text-gray-600 font-semibold">
-            MERN Stack Developer
-          </h3>
+          <div className="space-y-2">
+            <h2 className="text-4xl md:text-7xl font-black tracking-tighter leading-tight">
+              Hi, I'm{" "}
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-600">
+                Lucky Sharma
+              </span>
+            </h2>
+            <h3 className="text-xl md:text-3xl text-gray-400 font-medium tracking-tight">
+              MERN Stack Developer
+            </h3>
+          </div>
 
-          <p className="text-gray-600 text-[16px] leading-relaxed max-w-full md:max-w-[530px] text-left md:text-justify">
-            I’m a passionate developer focused on building impactful full-stack
-            applications using the MERN stack. I love crafting clean, efficient,
-            and scalable code that brings ideas to life. Currently, I’m pursuing
-            my{" "}
-            <span className="font-semibold green-text">
-              Bachelor of Computer Applications (BCA)
-            </span>
-            , and continuously improving my problem-solving and development
-            skills.
+          <p className="text-gray-400 text-[16px] md:text-[18px] leading-relaxed max-w-[550px] mx-auto md:mx-0">
+            I craft clean, scalable full-stack applications using the MERN stack. 
+            With a focus on performance and impactful user experiences, I turn complex 
+            problems into elegant digital solutions.
           </p>
 
-          <p className="text-[15px] md:text-[16px] font-medium text-gray-800 mt-2">
-            💼 Currently open for internships and job opportunities!
-          </p>
-
-          <p className="text-[14px] md:text-[16px] text-gray-700 font-semibold mt-4">
-            Turning ideas into reality — let’s connect!
-          </p>
-
-          <div className="flex items-center gap-7 mt-3 text-[26px] md:text-[30px]">
-            <a
-              href="mailto:tejasbirla3@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:scale-110 transition-transform"
-              style={{ color: "#EA4335" }}
-            >
-              <MdEmail />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/tejas-birla/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:scale-110 transition-transform"
-              style={{ color: "#0A66C2" }}
-            >
-              <FaLinkedin />
-            </a>
-
-            <a
-              href="https://github.com/TejasBirla"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:scale-110 transition-transform"
-              style={{ color: "#171515" }}
-            >
-              <FaGithub />
-            </a>
-
-            <a
-              href="https://x.com/TejasBytes"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:scale-110 transition-transform"
-              style={{ color: "#000000" }}
-            >
-              <FaXTwitter />
-            </a>
+          <div className="flex flex-col sm:flex-row items-center gap-6 mt-4">
+            <div className="flex items-center gap-6 text-2xl">
+              <a href="mailto:luckysharma232004@gmail.com" target="_blank" rel="noreferrer" className="hover:text-red-500 transition-all duration-300 hover:-translate-y-1"><MdEmail /></a>
+              <a href="https://www.linkedin.com/in/luckysharmaaaa/" target="_blank" rel="noreferrer" className="hover:text-blue-500 transition-all duration-300 hover:-translate-y-1"><FaLinkedin /></a>
+              <a href="https://github.com/luckysharmaaaa" target="_blank" rel="noreferrer" className="hover:text-purple-400 transition-all duration-300 hover:-translate-y-1"><FaGithub /></a>
+              <a href="https://www.instagram.com/_lucky.sharmaaa" target="_blank" rel="noreferrer" className="hover:text-pink-500 transition-all duration-300 hover:-translate-y-1"><FaInstagram /></a>
+            </div>
+            <span className="hidden sm:block h-8 w-px bg-white/10"></span>
+            <p className="text-xs font-bold uppercase tracking-widest text-gray-500">
+              Open for opportunities
+            </p>
           </div>
         </div>
 
-        {/* Right Side - Image */}
+        {/* Right Side - Image Section */}
         <div
-          className="flex justify-center md:justify-end"
+          className="relative flex-1 flex justify-center md:justify-end"
           data-aos="fade-left"
-          data-aos-once="true"
         >
-          <div className="relative w-[260px] h-[260px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden shadow-md bg-linear-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-            <img src={profileImg} alt="profile-Img" />
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-linear-to-r from-purple-600 to-pink-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            
+            <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden border-2 border-white/10 shadow-2xl">
+              <img 
+                src={luckyimage} 
+                alt="Lucky Sharma" 
+                /* Removed grayscale and hover:grayscale-0 here */
+                className="w-full h-full object-cover transition-all duration-500 ease-in-out scale-110 hover:scale-100"
+              />
+            </div>
           </div>
         </div>
       </div>
