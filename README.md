@@ -1,4 +1,4 @@
-# Tejas Birla Portfolio
+# Lucky sharma Portfolio
 
 Welcome to my personal portfolio! Built with React and Tailwind CSS, this site showcases my projects, skills, and experience as a web developer. It features a modern, responsive design with smooth navigation and interactive UI components.
 
@@ -14,5 +14,4 @@ Welcome to my personal portfolio! Built with React and Tailwind CSS, this site s
 - JavaScript (ES6+)
 - Vercel for hosting
 
-## Live Demo
-Check out the portfolio: [tejasbirla-portfolio.vercel.app](https://tejasbirla-portfolio.vercel.app)
+
